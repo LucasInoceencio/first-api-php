@@ -8,7 +8,7 @@
   if($_SERVER['REQUEST_METHOD'] == 'DELETE') {
     $dados = json_decode(file_get_contents("php://input"), true);
     if($dados != null) {
-      $idEnterprise = $dados['idEnterprise'];
+      $idEnterprise = $dados['id_enterprise'];
 
       include '../Connection.php';
       $sql = "DELETE FROM enterprise WHERE id_enterprise='$idEnterprise'";

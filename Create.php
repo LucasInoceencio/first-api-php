@@ -8,10 +8,10 @@
     $dados = json_decode(file_get_contents("php://input"), true);
 
     if ($dados != null) {
-      $companyName = $dados['companyName'];
-      $tradingName = $dados['tradingName'];
+      $companyName = $dados['company_name'];
+      $tradingName = $dados['trading_name'];
       $cnpj = $dados['cnpj'];
-      $openingDate = $dados['openingDate'];
+      $openingDate = $dados['opening_date'];
 
       if ($companyName == "") {
         $message = "Digite a Razão Social da empresa!";
