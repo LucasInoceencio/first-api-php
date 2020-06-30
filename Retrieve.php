@@ -11,6 +11,8 @@
     while($dado = mysqli_fetch_assoc($result)) {
       $dados[] = $dado;
     }
+
+    //var_dump($dados);
     echo json_encode($dados);
 
   } else {
